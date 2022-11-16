@@ -1,0 +1,42 @@
+.header {
+  background: $colorHeadBack;
+  height: 400px;
+
+  .container {
+    background: url('../../public/images/portrait-alpha.png') $colorHeadBack;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width: 750px) {
+      // background: $colorHeadBack;
+      justify-content: center;
+      background-position: bottom 60px;
+      align-items: flex-start;
+      padding-top: 30px;
+    }
+  }
+  &__logo {
+    color: $colorMain;
+    text-shadow: 2px 2px 2px black;
+    transition: all 0.2s ease-in-out;
+
+    &_title {
+      font-size: 45px;
+      margin-left: 20px;
+    }
+
+    &_text {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+  }
+}
