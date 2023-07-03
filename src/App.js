@@ -1,3 +1,4 @@
+import './components/button';
 import './App.scss';
 
 function App() {
